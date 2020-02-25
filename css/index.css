@@ -71,7 +71,7 @@ footer {
   text-align: center;
 }
 .main-header {
-  background-image: url("/Laboratory1-MyCV/images/tokyo.jpg");
+  background-image: url("../images/tokyo.jpg");
   background-size: cover;
   padding-bottom: 60px;
 }
