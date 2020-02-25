@@ -1,0 +1,77 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ul-nav {
+  list-style: none;
+  background-color: mediumturquoise;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.photo {
+  border-radius: 50px;
+  display: flex;
+  margin: auto;
+  padding: 25px;
+}
+.company-logo {
+  padding: 5px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.company-link {
+  text-decoration: none;
+}
+
+address {
+  /* background-color: cadetblue; */
+  font-style: bold;
+  color: white;
+  padding: 20px;
+  margin: 10px auto;
+  border: 1px dashed lightgray;
+  width: max-content;
+  text-align: center;
+}
+address > div {
+  padding: 10px;
+}
+a {
+  color: white;
+}
+a:hover {
+  opacity: 0.5;
+}
+h1 {
+  font-style: italic;
+  text-align: center;
+  padding: 25px;
+  color: white;
+}
+h2 {
+  font-style: normal;
+  text-align: center;
+  color: white;
+}
+h3 {
+  padding-bottom: 10px;
+}
+section {
+  margin: 20px 20px;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+footer {
+  padding: 20px;
+  background-color: mediumturquoise;
+  text-align: center;
+}
+.main-header {
+  background-image: url("/Laboratory1-MyCV/images/tokyo.jpg");
+  background-size: cover;
+  padding-bottom: 60px;
+}
