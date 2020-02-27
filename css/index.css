@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Raleway";
 }
 
 svg {
@@ -10,13 +11,24 @@ svg {
   max-height: 50px;
   fill: white;
 }
-.ul-nav {
+ul {
   list-style: none;
+}
+.ul-nav {
   background-color: mediumturquoise;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.ul-nav > li {
+  padding: 10px;
+  border: 2px solid #b6edeb;
+  border-radius: 5px;
+}
+.ul-nav > li:hover {
+  border: 2px outset #b6edeb;
+  border-radius: 5px;
 }
 .photo {
   border-radius: 50%;
@@ -24,19 +36,48 @@ svg {
   margin: auto;
   padding: 50px;
 }
+.main-header {
+  background-image: url("../images/tokyo.jpg");
+  background-size: cover;
+}
 .company-logo {
   padding: 5px;
-  max-width: 80px;
-  max-height: 80px;
+  margin: 10px;
+  max-width: 150px;
+  max-height: 100px;
+  border: 2px outset mediumturquoise;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  text-align: center;
+  padding: 10px;
+}
+.education-1 span {
+  padding: none;
+}
+section > p {
+  text-align: justify;
+  padding: 10px;
 }
 .company-link {
   text-decoration: none;
+  display: block;
+  max-width: max-content;
 }
 .sofftek,
 .amiGo {
+  padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: stretch;
+}
+span {
+  font-weight: bold;
 }
 .icons {
   display: flex;
@@ -48,11 +89,20 @@ svg {
   margin: 10px;
   line-height: 80px;
 }
-*/ a {
+* a {
   color: white;
 }
 a:hover {
   opacity: 0.5;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.experience-header {
+  display: flex;
+  align-self: left;
 }
 h1 {
   font-style: italic;
@@ -80,9 +130,9 @@ th {
   border: 1px solid #eeeeee;
   padding: 15px;
 }
-th.heading {
-  background-color: #55b3c5;
-  color: white;
+.table-right > thead,
+.table-right > th {
+  display: none;
 }
 tr:hover {
   background: #f4f4f4;
@@ -92,6 +142,29 @@ td:hover {
 }
 .software-tables {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.projects > li {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid mediumturquoise;
+  border-radius: 5px;
+}
+.abilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.abilities > li {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid mediumturquoise;
+  border-radius: 5px;
+}
+.languages {
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -100,7 +173,66 @@ footer {
   background-color: mediumturquoise;
   text-align: center;
 }
-.main-header {
-  background-image: url("../images/tokyo.jpg");
-  background-size: cover;
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .table-right > thead,
+  .table-right > th {
+    display: table-header-group;
+  }
+  .software-tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .sofftek {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+  .sofftek-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .amiGo {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+  .amiGo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+}
+@media (min-width: 991px) {
+  .table-right > thead,
+  .table-right > th {
+    display: table-header-group;
+  }
+  .software-tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .sofftek {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+  .sofftek-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .amiGo {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+  .amiGo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
 }
